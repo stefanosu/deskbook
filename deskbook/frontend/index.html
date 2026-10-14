@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deskbook</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Deskbook</h1>
+    <label>Signed in as <select id="user"></select></label>
+  </header>
+  <main>
+    <section>
+      <div class="controls">
+        <label>Date <input type="date" id="date"></label>
+        <label>Floor <select id="floor"><option value="">All floors</option></select></label>
+      </div>
+      <p id="message" role="status"></p>
+      <ul id="desks" class="list"></ul>
+    </section>
+    <aside>
+      <h2>My bookings</h2>
+      <ul id="mine" class="list"></ul>
+    </aside>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
